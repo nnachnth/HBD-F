@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .birthday-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 20px;
+            padding: 30px 50px;
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            color: #ff5f6d;
+            margin: 0;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #555;
+            margin-top: 15px;
+        }
+
+        .birthday-image {
+            margin-top: 20px;
+            width: 350px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            animation: float 3s infinite ease-in-out;
+            border: 5px solid #ff5f6d;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-container">
+        <h1>🎉 Happy Birthday! 🎂</h1>
+        <p>Wishing you a day full of smiles and laughter!</p>
+        <img src="img/IMG_1507.jpg" alt="Birthday Celebration" class="birthday-image">
+    </div>
+</body>
+</html>
